@@ -1,0 +1,7 @@
+{
+  "name": "ApepesM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
