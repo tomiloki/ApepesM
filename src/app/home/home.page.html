@@ -13,8 +13,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+  <ion-list>
+    <ion-label>
+      <ion-input [(ngModel)]="newUser.nombre"></ion-input>
+    </ion-label>
+
+    <ion-label>
+      <ion-input type-number [(ngModel)]="newUser.edad"></ion-input>
+    </ion-label>
+  </ion-list>
+
+  <div style="margin: 20px">
+    <ion-button (click)="save()" expand="block" shape="round">
+      Guardar
+    </ion-button>
   </div>
+
+
+  @if (cargando) {
+    <div style="text-align: center;"></div>
+      <ion-spinner name=bubbles
+  }
+
+
 </ion-content>
