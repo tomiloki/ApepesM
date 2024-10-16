@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonInput, IonCard, IonButton, IonSpinner, IonButtons, IonIcon } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonInput, IonCard, IonButton, IonSpinner, IonButtons, IonIcon, IonCardHeader, IonCardTitle } from '@ionic/angular/standalone';
 import { UserI } from '../common/models/users.models';
 import { FirestoreService } from '../common/services/firestore.service';
 import { FormsModule } from '@angular/forms';
@@ -10,7 +10,7 @@ import { IoniconsModule } from '../common/modules/ionicons.module';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonIcon, IonButtons, IonSpinner, IonButton, IonCard, IonLabel, IonItem, IonList, IonHeader, IonToolbar, IonTitle,
+  imports: [IonCardTitle, IonCardHeader, IonIcon, IonButtons, IonSpinner, IonButton, IonCard, IonLabel, IonItem, IonList, IonHeader, IonToolbar, IonTitle,
 
     IonContent, FormsModule, IonCard, IonButton, IoniconsModule],
 })

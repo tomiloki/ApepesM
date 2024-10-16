@@ -19,13 +19,13 @@
 
     <ion-item>
       <ion-label>Nombre</ion-label>
-        <ion-input [(ngModel)]="newUser.nombre"></ion-input>
+        <ion-input id="nombreInput" [(ngModel)]="newUser.nombre" name="nombreModel" ngDefaultControl></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Edad
       </ion-label>
-        <ion-input type-number [(ngModel)]="newUser.edad"></ion-input>
+        <ion-input id="edadInput" type-number [(ngModel)]="newUser.edad" name="edadModel" ngDefaultControl></ion-input>
     </ion-item>
 
 
